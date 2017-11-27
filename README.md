@@ -71,8 +71,11 @@ sudo pip install virtualenv
 mkdir ui && cd ui
 virtualenv venv
 source ui/bin/activate
-echo hg+http://bitbucket.org/pygame/pygame >> requirements.txt
+#echo hg+http://bitbucket.org/pygame/pygame >> requirements.txt
 pip install -r requirements.txt
+sudo mkdir /usr/share/fonts/truetype/raleway/ && cd /usr/share/fonts/truetype/raleway/
+sudo curl -L https://www.fontsquirrel.com/fonts/download/raleway | sudo bsdtar -xvf - -C .
+cd ~/ui
 ```
 
 **Copy the script below into installsdl.sh**
