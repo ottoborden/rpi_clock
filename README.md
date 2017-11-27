@@ -22,16 +22,26 @@ I'm learning about electronics and product design by building my dream 'Wake up 
   * `sudo sh -c "TERM=linux setterm -blank 0 >/dev/tty0"`
 
 
-## Wifi (no keyboard/monitor)
-Modify /etc/network/interfaces
+## Setting up Wifi SSH (no keyboard/monitor)
+Modify `/etc/network/interfaces`
+```
 allow-hotplug wlan0
 auto wlan0
 iface wlan0 inet dhcp
-	wpa-ssid "HOME-F592-2.4"
+	wpa-ssid "<wifi_ssid>"
 	wpa-psk "<wifi_password>”
+```
+
+Connect to RPi
+```
+ssh pi@raspberrypi.local
+```
+default password is `raspberry`
 
 ## GUI
-`startx some-app --kiosk` - Start a program and a single X server from CLI
+Start a program and a single X server from CLI
+* `startx some-app --kiosk`
+
 **Bash script to launch python script with virtualenv**
 ```
 #!/bin/bash
