@@ -58,7 +58,7 @@ Run with `sudo startx ~/ui/run`
 How to get software up and running on Adafruit's Raspian Jessie Lite image
 
 **NOTE:** 
-* PyGame 
+* PyGame @ 1.9.4.dev0 as 11/26/17
 * Python v2.7.9
 
 ```
