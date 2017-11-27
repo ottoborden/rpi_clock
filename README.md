@@ -102,4 +102,5 @@ apt-get -y --force-yes install libsdl1.2debian/wheezy
 ```
 
 `sudo chmod +x installsdl.sh`
+
 `sudo ./installsdl.sh`
