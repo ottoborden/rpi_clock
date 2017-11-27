@@ -2,7 +2,7 @@
 
 ## Known Issues
 * Screen does go blank in 30 mins despite following instructions in README
-
+  * 10 minutes if the RPi is not logged in as `pi`
 ## Unsolved Problems
 * How to architect this thing
   * Experiment with MVC
