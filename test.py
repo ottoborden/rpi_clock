@@ -17,8 +17,8 @@ pygame.init()
 pygame.mouse.set_visible(False)
 
 lcd = pygame.display.set_mode((320, 240), pygame.FULLSCREEN)
-font_big = pygame.font.Font('/usr/share/fonts/truetype/raleway/Raleway-ExtraLight.ttf', 40)
-font_small = pygame.font.Font('/usr/share/fonts/truetype/raleway/Raleway-Thin.ttf', 20)
+font_big = pygame.font.Font('/usr/share/fonts/truetype/raleway/Raleway-SemiBold.ttf', 40)
+font_small = pygame.font.Font('/usr/share/fonts/truetype/raleway/Raleway-Light.ttf', 20)
 bg_color = (0, 0, 0)
 font_color = (255, 255, 255)
 
@@ -29,8 +29,8 @@ now = pendulum.now('America/New_York')
 
 try:
 	while True:
-		currTime = time.strftime('%l:%M%p %Z')
-		currDate = time.strftime('%B %d, %Y')
+		currTime = now.format('%I:%M %p')
+		currDate = now.format('%A %B %-d%t %Y')
 
 		lcd.fill(bg_color)
 		text_surface = font_big.render('%s'%currTime, True, font_color)
