@@ -1,0 +1,6 @@
+#!/bin/bash
+
+app="$(pwd)/"
+pythonEnv="${app}ui/"
+. ${pythonEnv}"bin/activate"
+"${pythonEnv}bin/python" "${app}test.py"
